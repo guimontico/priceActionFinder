@@ -3,7 +3,6 @@
 #import libraries
 from alpha_vantage.foreignexchange import ForeignExchange
 from alpha_vantage.timeseries import TimeSeries
-import matplotlib.pyplot as plt
 import pandas as pd
 from pandas import DataFrame
 from google.colab import files
