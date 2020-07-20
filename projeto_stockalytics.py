@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 #import libraries
 from alpha_vantage.foreignexchange import ForeignExchange
