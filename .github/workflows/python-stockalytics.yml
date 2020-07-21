@@ -41,8 +41,7 @@ jobs:
          ./projeto_stockalytics.py
     - name: Updating data/eurusd.csv file
       uses: alexesprit/action-update-file@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         file-path: data/eurusd.csv
         commit-msg: Atualizando data/eurusd.csv
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
