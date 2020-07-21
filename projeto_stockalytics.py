@@ -6,8 +6,8 @@ from alpha_vantage.timeseries import TimeSeries
 import pandas as pd
 from pandas import DataFrame
 
-from pandas_datareader import data as web
-import plotly.graph_objects as go
+# from pandas_datareader import data as web
+# import plotly.graph_objects as go
 
 #set the key and the output format 
 ALPHA_VANTAGE_API_KEY = 'FAMIMUBSM0W9GBRE'
