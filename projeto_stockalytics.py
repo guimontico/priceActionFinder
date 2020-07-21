@@ -5,8 +5,6 @@ from alpha_vantage.foreignexchange import ForeignExchange
 from alpha_vantage.timeseries import TimeSeries
 import pandas as pd
 from pandas import DataFrame
-from google.colab import files
-from datetime import datetime
 
 from pandas_datareader import data as web
 import plotly.graph_objects as go
