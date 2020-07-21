@@ -42,7 +42,7 @@ jobs:
     - name: Updating data/eurusd.csv file
       uses: alexesprit/action-update-file@master
       env:
-        GITHUB_TOKEN: ${{ secrets.PRICE_ACTION_FINDER }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         file-path: data/eurusd.csv
         commit-msg: Atualizando data/eurusd.csv
