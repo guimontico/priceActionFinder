@@ -44,4 +44,4 @@ jobs:
       with:
         file-path: data/eurusd.csv
         commit-msg: Atualizando data/eurusd.csv
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
