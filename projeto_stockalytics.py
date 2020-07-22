@@ -22,7 +22,7 @@ intraday_data = intraday_data.reset_index()
 
 EURUSD_60min = pd.read_csv('data/eurusd.csv')
 
-EURUSD_60min = EURUSD_60min.drop(['Unnamed: 0'], axis=1)
+#EURUSD_60min = EURUSD_60min.drop(['Unnamed: 0'], axis=1)
 
 EURUSD_60min = EURUSD_60min.append(intraday_data, ignore_index=True)
 
