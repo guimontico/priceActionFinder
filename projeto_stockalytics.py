@@ -22,13 +22,12 @@ intraday_data = intraday_data.reset_index()
 
 EURUSD_60min = pd.read_csv('data/eurusd.csv')
 
-#EURUSD_60min = EURUSD_60min.drop(['Unnamed: 0'], axis=1)
-
 EURUSD_60min = EURUSD_60min.append(intraday_data, ignore_index=True)
 
 EURUSD_60min = EURUSD_60min.drop_duplicates()
 
-EURUSD_60min = EURUSD_60min.drop_duplicates(subset=['Open', 'High', 'Low', 'Close'], keep='first')
+#EURUSD_60min = EURUSD_60min.drop_duplicates(subset=['Open', 'High', 'Low', 'Close'], keep='first')
+EURUSD_60min = EURUSD_60min.drop_duplicates(subset=['date'], keep='first')
 
 for i, row in EURUSD_60min.iterrows():
     EURUSD_60min.at[i,'date'] = pd.Timestamp(row.date)
